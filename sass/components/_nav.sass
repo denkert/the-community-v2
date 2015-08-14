@@ -1,0 +1,54 @@
+/* Mobile menu */
+
+.main-navigation 
+	ul 
+		margin: 0
+		display: none
+		list-style: none
+
+.menu-toggle,
+.main-navigation.toggled ul 
+	display: inline
+
+/* Desktop Menu */
+
+@media screen and (min-width: 700px) 
+	.menu-toggle 
+		display: none
+	
+	.main-navigation
+		ul
+			padding-bottom: 5px
+			display: block
+
+			li
+				display: inline
+				
+				a
+					font-size: 0.8rem
+					text-decoration: none
+				&:hover
+					text-decoration: underline
+
+
+			
+
+// .comment-navigation,
+// .posts-navigation,
+// .post-navigation 
+
+// 	.site-main & 
+// 		margin: 0 0 1.5em
+// 		overflow: hidden
+	
+
+// 	& .nav-previous 
+// 		float: left
+// 		width: 50%
+	
+
+// 	& .nav-next 
+// 		float: right
+// 		text-align: right
+// 		width: 50%
+	
