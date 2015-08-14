@@ -239,7 +239,7 @@ a {
       width: 150px; }
 
 /* Desktop */
-@media screen and (min-width: 851px) {
+@media screen and (min-width: 843px) {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
@@ -288,7 +288,7 @@ a {
   margin: 0;
     margin-flex: 1; }
   .site-branding img {
-    max-width: 350px; }
+    max-width: 341px; }
 
 .skip-link {
   display: none; }
@@ -305,7 +305,7 @@ a {
 .menu-social {
   text-align: right; }
   .menu-social ul {
-    height: 26px; }
+    height: 30px; }
     .menu-social ul li a {
       font-size: 0;
       visibility: hidden; }
@@ -321,20 +321,48 @@ a {
     .menu-social ul li a[href*="instagram.com"]::before {
       content: '\f16d'; }
 
-.main-image-slider {
-  border: 1px solid green;
-  max-width: 900px;
-  height: 300px; }
+@media screen and (max-width: 843px) {
+  .menu-social ul {
+    display: block;
+    padding-right: 10px; }
+    .menu-social ul li {
+      display: inline; } }
 
-.home-grid-menu {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .home-grid-menu .box {
-    margin-top: 20px;
-    height: 150px;
-    width: 280px;
-    border: 1px solid blue; }
+@media screen and (max-width: 465px) {
+  .site-header {
+    display: block;
+    text-align: center;
+    margin-bottom: 2em; }
+  .main-navigation {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .main-navigation .main-menu button {
+      font-size: 1.2rem;
+      font-weight: 100; }
+      .main-navigation .main-menu button .menu-toggle {
+        margin: 0; }
+    .main-navigation .social-media-menu li {
+      padding: 0 0.6em 0 0; } }
+
+.site-content {
+  display: block; }
+  .site-content .main-image-slider {
+    border: 1px solid green;
+    max-width: 900px;
+    height: 300px; }
+  .site-content .home-grid-menu {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .site-content .home-grid-menu .box {
+      margin-top: 20px;
+      height: 150px;
+      width: 280px;
+      border: 1px solid blue; }
