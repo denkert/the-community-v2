@@ -9,10 +9,28 @@
 
 	.home-grid-menu
 		display: flex
-		justify-content: space-between
+		flex-direction: column;
 
 		.box 
-			margin-top: 20px
-			height: 150px
-			width: 280px
+			flex: 1
+			margin: 1em auto
+			height: 180px
+			min-width: 280px
 			border: 1px solid blue
+
+	@media all and ( min-width: 700px ) 
+
+		.home-grid-menu
+			flex-direction: row;
+			justify-content: space-between
+
+			.box 
+				flex: 1
+				margin: 1em 0 0 0
+				height: 180px
+				max-width: 280px
+				border: 1px solid blue
+
+
+  
+
