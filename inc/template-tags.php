@@ -264,3 +264,23 @@ function communityv2_category_transient_flusher() {
 }
 add_action( 'edit_category', 'communityv2_category_transient_flusher' );
 add_action( 'save_post',     'communityv2_category_transient_flusher' );
+
+/* Social Media Menu */
+
+function communityv2_social_menu() {
+	if (has_nav_menu('social')) {
+		wp_nav_menu(
+			array(
+				'theme_location' => 'social',
+				'container' => 'div',
+				'container_id' => 'menu-social',
+				'container_class' => 'menu-social',
+				'menu_id' => 'menu-social-items',
+				'menu_class' => 'menu-itmes',
+				'depth' => 1,
+				'fallback_cb' => '',
+			)
+		);
+	}
+}
+

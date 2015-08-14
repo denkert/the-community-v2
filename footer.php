@@ -15,9 +15,12 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'communityv2' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'communityv2' ), 'WordPress' ); ?></a>
+			We would like to thank our generous donors: Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson, Name Namesson
+			<br><br>The Community 2015 
 			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'communityv2' ), 'communityv2', '<a href="http://ellinordenkert.com" rel="designer">Ellinor Denkert</a>' ); ?>
+ 			All Rights Reserved
+			<span class="sep"> | </span>
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'communityv2' ), 'Community 2.0', '<a href="http://ellinordenkert.com" rel="designer">Ellinor Denkert</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

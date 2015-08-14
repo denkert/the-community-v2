@@ -45,6 +45,7 @@ function communityv2_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'communityv2' ),
+		'social' => __('Social Media', 'communityv2'),
 	) );
 
 	/*

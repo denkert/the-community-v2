@@ -179,30 +179,97 @@ body {
   margin: 20px auto;
   max-width: 900px; }
 
-/* Mobile menu */
-.main-navigation ul {
-  margin: 0;
-  display: none;
-  list-style: none; }
+* {
+  color: black;
+  font-family: "Open Sans", sans-serif; }
 
+h1 {
+  font-size: 2rem;
+  font-weight: 100; }
+
+p {
+  font-size: 0.9rem;
+  font-weight: 300; }
+
+a {
+  font-weight: 500;
+  text-decoration: none; }
+  a:hover {
+    color: blue; }
+
+/* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-  display: inline; }
+  display: block; }
 
-/* Desktop Menu */
-@media screen and (min-width: 700px) {
+.menu-toggle {
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 200; }
+
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  line-height: 2em; }
+  .main-navigation ul li {
+    padding-left: 1em;
+    display: block; }
+  .main-navigation ul a {
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: black;
+    text-decoration: none; }
+    .main-navigation ul a:hover {
+      color: blue; }
+  .main-navigation ul ul {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    float: left;
+    position: absolute;
+    top: 2em;
+    left: -999em;
+    z-index: 99999; }
+    .main-navigation ul ul li {
+      border-top: 1px solid #eee; }
+    .main-navigation ul ul a {
+      width: 150px; }
+
+/* Desktop */
+@media screen and (min-width: 851px) {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
-    padding-bottom: 5px;
-    display: block; }
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    line-height: 2em; }
     .main-navigation ul li {
+      padding-left: 1em;
       display: inline; }
-      .main-navigation ul li a {
-        font-size: 0.8rem;
-        text-decoration: none; }
-      .main-navigation ul li:hover {
-        text-decoration: underline; } }
+    .main-navigation ul a {
+      font-size: 0.8rem;
+      font-weight: 200;
+      color: black;
+      text-decoration: none; }
+      .main-navigation ul a:hover {
+        color: blue; }
+    .main-navigation ul ul {
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+      background-color: #fff;
+      float: left;
+      position: absolute;
+      top: 2em;
+      left: -999em;
+      z-index: 99999; }
+      .main-navigation ul ul li {
+        border-top: 1px solid #eee; }
+      .main-navigation ul ul a {
+        width: 150px; } }
 
 .site-header {
   display: -webkit-flex;
@@ -214,7 +281,8 @@ body {
           justify-content: space-between;
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
-          align-items: flex-end; }
+          align-items: flex-end;
+  margin-bottom: 10px; }
 
 .site-branding {
   margin: 0;
@@ -226,11 +294,32 @@ body {
   display: none; }
 
 .site-footer {
-  padding: 20px;
+  border-top: 1px solid black;
+  margin-top: 10px;
+  padding: 10px;
   text-align: center;
   font-size: 0.5rem; }
   .site-footer a {
     font-weight: 900; }
+
+.menu-social {
+  text-align: right; }
+  .menu-social ul {
+    height: 26px; }
+    .menu-social ul li a {
+      font-size: 0;
+      visibility: hidden; }
+    .menu-social ul li a:before {
+      visibility: visible;
+      display: inline;
+      font-family: 'Fontawesome';
+      font-size: 1.2rem; }
+    .menu-social ul li a[href*="facebook.com"]::before {
+      content: '\f09a'; }
+    .menu-social ul li a[href*="twitter.com"]::before {
+      content: '\f099'; }
+    .menu-social ul li a[href*="instagram.com"]::before {
+      content: '\f16d'; }
 
 .main-image-slider {
   border: 1px solid green;
@@ -246,6 +335,6 @@ body {
           justify-content: space-between; }
   .home-grid-menu .box {
     margin-top: 20px;
-    height: 100px;
+    height: 150px;
     width: 280px;
     border: 1px solid blue; }

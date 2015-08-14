@@ -1,0 +1,22 @@
+.menu-social
+	text-align: right
+
+	ul
+		height: 26px
+		li
+			a
+				font-size: 0
+				visibility: hidden
+			a:before
+				visibility: visible
+				display: inline
+				font-family: 'Fontawesome'
+				font-size: 1.2rem
+
+			a[href*="facebook.com"]::before
+				content: '\f09a'
+			a[href*="twitter.com"]::before
+				content: '\f099'
+			a[href*="instagram.com"]::before
+				content: '\f16d'
+
