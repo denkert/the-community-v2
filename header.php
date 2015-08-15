@@ -40,14 +40,18 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-		
-			<div class="social-media-menu">
-				<?php communityv2_social_menu(); ?>
+			
+			<div class="button-nav-wrapper">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-align-justify"><?php esc_html_e( '', 'communityv2' ); ?></i></button>
+				<div class="social-media-menu">
+					<?php communityv2_social_menu(); ?>
+				</div>
 			</div>
 			<div class="main-menu">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'communityv2' ); ?></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</div>
+
+			
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 

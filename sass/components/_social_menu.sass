@@ -2,28 +2,26 @@
 	text-align: right
 
 	ul
-		height: 30px
-		li
-			a
-				font-size: 0
-				visibility: hidden
-			a:before
-				visibility: visible
-				display: inline
-				font-family: 'Fontawesome'
-				font-size: 1.2rem
+		display: block
+		margin: 0
 
-			a[href*="facebook.com"]::before
-				content: '\f09a'
-			a[href*="twitter.com"]::before
-				content: '\f099'
-			a[href*="instagram.com"]::before
-				content: '\f16d'
+	.menu-item
+		display: inline-block
 
-@media screen and (max-width: 843px)
-	.menu-social
-		ul
-			display: block
-			padding-right: 10px
-			li
-				display: inline
+		a
+			font-size: 0
+			visibility: hidden
+
+		a:before
+			padding: 0.2em
+			visibility: visible
+			display: inline
+			font-family: 'Fontawesome'
+			font-size: 1.2rem
+
+		a[href*="facebook.com"]::before
+			content: '\f09a'
+		a[href*="twitter.com"]::before
+			content: '\f099'
+		a[href*="instagram.com"]::before
+			content: '\f16d'

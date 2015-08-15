@@ -1,16 +1,26 @@
 .site-header
-	display: flex
-	height: 70px
-	justify-content: space-between
-	align-items: flex-end
-	margin-bottom: 10px
+	margin-bottom: 0.5em
+	text-align: center
 
-.site-branding
-	margin: 0
-  	flex: 1;
 	img
-		max-width: 341px
-		
-.skip-link
-	display: none
+		max-width: 400px
+		width: 100%
+
+@media screen and (min-width: 600px)
+
+	.site-header
+		display: flex
+		height: 70px
+		justify-content: space-between
+		align-items: flex-end
+		margin-bottom: 10px
+
+	.site-branding
+		margin: 0
+	  	flex: 1;
+		img
+			max-width: 341px
+			
+	.skip-link
+		display: none
 

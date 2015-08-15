@@ -1,149 +1,101 @@
-
-
-
-/* Small menu. */
-
-.menu-toggle,
-.main-navigation.toggled ul 
-	display: block
+/* Mobile menu. */
 
 .menu-toggle
 	background: none
 	border: none
-	text-transform: uppercase
-	font-size: 0.8rem
-	font-weight: 200
+	font-size: 1.2rem
 
-//Need help making this do so the whole thing goes down instead of up, 
-//and pushes down content for mobile.
+.main-menu
+	.toggled &
+		border-top: 1px solid #eee
 
-.main-navigation 
-	ul 
+	.menu 
 		display: none
 		list-style: none
 		margin: 0
 		padding-left: 0
-		line-height: 2em
+		text-align: left
 
-
-		li 
-			padding-left: 1em
+		.toggled &
 			display: block
+		
+		a
+			line-height: 2em
+
+	.menu-item 
+		padding-left: 1em
+		display: block
 
 		a 
 			font-size: 0.8rem
 			font-weight: 200
-			color: black
+			color: #333
 			text-decoration: none
-			&:hover
-				color: blue		
-		ul 
-			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
-			background-color: #fff
-			float: left
-			position: absolute
-			top: 2em
-			left: -999em
-			z-index: 99999
+			
+			&:hover, &:active
+				color: blue	
 
-			li
-				border-top: 1px solid #eee
+.main-navigation
+	.button-nav-wrapper
+		display: flex
+		justify-content: space-between
+			
+	
 
-			a 
-				width: 150px
+// Desktop NAV
+@media screen and (min-width: 700px) 
+	.main-navigation
+		.button-nav-wrapper
+			justify-content: flex-end
+			position: relative
+			bottom: 10px
 
-/* Desktop */
-
-//Need help showing child elements from PRODUCTIONS (Ul ul)
-
-@media screen and (min-width: 843px) 
-	.menu-toggle 
+	.menu-toggle
 		display: none
 	
-	.main-navigation 
+	.main-menu
+		.menu
+			display: flex
+			justify-content: space-between
 
-		ul 
-			display: block
-			list-style: none
-			margin: 0
-			padding-left: 0
-			line-height: 2em
 
-			li 
-				padding-left: 1em
-				display: inline
+			> .menu-item
+				display: inline-block
+				padding-left: 0
+				margin-left: 1em
 
-			a 
-				font-size: 0.8rem
-				font-weight: 200
-				color: black
-				text-decoration: none
-				
-				&:hover
-					color: blue	
-			ul 
-				box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
-				background-color: #fff
-				float: left
-				position: absolute
-				top: 2em
-				left: -999em
-				z-index: 99999
+				a
+					display: flex
+					align-items: center
+					white-space: nowrap
+					transition: all 0.25s ease-in-out
 
-				li
-					border-top: 1px solid #eee
+					&:hover, &:active
+						background: crimson
+						color: #eee
 
-				a 
+			// Sub Menu
+			.menu-item-has-children
+				position: relative
+
+				.sub-menu
+					box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2)
+					background-color: rgba(255, 255, 255, 0.9)
+					position: absolute
+					top: 2em
+					left: -999em
+					z-index: 99999
+					padding: 0
 					width: 150px
-				
+					
+					.menu-item
+						padding-left: 0
 
+						a
+							display: block
+							padding: 0.5em
 
+				&:hover
+					.sub-menu
+						left: 0
 
-// /* Desktop Menu */
-
-// @media screen and (min-width: 815px) 
-// 	.menu-toggle 
-// 		display: none
-	
-// 	.main-navigation
-// 		ul
-// 			padding-bottom: 5px
-// 			display: block
-
-// 			li
-// 				display: inline
-// 				padding-left: 0.2em
-				
-// 				a
-// 					font-size: 0.8rem
-// 					font-weight: 200
-// 					color: black
-// 					text-decoration: none
-// 				&:hover
-// 					text-decoration: underline
-
-// 			ul
-// 				position: absolute
-// 				background: #fff
-
-			
-
-// .comment-navigation,
-// .posts-navigation,
-// .post-navigation 
-
-// 	.site-main & 
-// 		margin: 0 0 1.5em
-// 		overflow: hidden
-	
-
-// 	& .nav-previous 
-// 		float: left
-// 		width: 50%
-	
-
-// 	& .nav-next 
-// 		float: right
-// 		text-align: right
-// 		width: 50%
-	
