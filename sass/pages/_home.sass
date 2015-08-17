@@ -2,34 +2,98 @@
 	display: block
 
 	.main-image-slider 
-	    border: 1px solid green
 	    max-width: 900px
-	    height: 300px
+	    max-height: 400px
+
+	    .theme-light.slider-wrapper
+	    	padding: 0
 
 
 	.home-grid-menu
 		display: flex
-		flex-direction: column;
+		flex-direction: column
+
+		.box
+			background: black
+			flex: 1
+			margin: 0.7em auto
+			min-height: 180px
+			min-width: 280px
+			overflow: hidden
+			position: relative
+
+			img
+				position:absolute
+				opacity: 0.7
+				-webkit-transition: opacity 0.35s
+				transition: opacity 0.35s
+
+			&:hover
+				opacity: 0.4
+	
+
+
+// figure.box figcaption::before,
+// figure.box figcaption::after 
+// 	position: absolute
+// 	top: 30px
+// 	right: 30px
+// 	bottom: 30px
+// 	left: 30px
+// 	content: ''
+// 	opacity: 0
+// 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s
+// 	transition: opacity 0.35s, transform 0.35s
+
+
+// figure.box figcaption::before 
+// 	border-top: 1px solid #fff
+// 	border-bottom: 1px solid #fff
+// 	-webkit-transform: scale(0,1)
+// 	transform: scale(0,1)
+
+
+// figure.box figcaption::after 
+// 	border-right: 1px solid #fff
+// 	border-left: 1px solid #fff
+// 	-webkit-transform: scale(1,0)
+// 	transform: scale(1,0)
+
+
+// figure.box h2 
+// 	padding-top: 30%
+// 	-webkit-transition: -webkit-transform 0.35s
+// 	transition: transform 0.35s
+// 	-webkit-transform: translate3d(0,-20px,0)
+// 	transform: translate3d(0,-20px,0)
+
+
+
+// figure.box:hover figcaption::before,
+// figure.box:hover figcaption::after 
+// 	opacity: 1
+// 	-webkit-transform: scale(1)
+// 	transform: scale(1)
+
+
+// figure.box:hover h2,
+// figure.box:hover p 
+// 	opacity: 1
+// 	-webkit-transform: translate3d(0,0,0)
+// 	transform: translate3d(0,0,0)
+						
+
+@media all and ( min-width: 600px ) 
+
+	.home-grid-menu
+		flex-direction: row
+		justify-content: space-between
 
 		.box 
 			flex: 1
-			margin: 1em auto
-			height: 180px
-			min-width: 280px
-			border: 1px solid blue
-
-	@media all and ( min-width: 700px ) 
-
-		.home-grid-menu
-			flex-direction: row;
-			justify-content: space-between
-
-			.box 
-				flex: 1
-				margin: 1em 0 0 0
-				height: 180px
-				max-width: 280px
-				border: 1px solid blue
+			margin: 1em 0 0 0
+			height: 130px
+			max-width: 280px
 
 
   
