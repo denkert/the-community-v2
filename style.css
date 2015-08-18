@@ -379,6 +379,7 @@ a {
 
 @media screen and (min-width: 700px) {
   .site-header {
+    margin-top: 20px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -417,7 +418,11 @@ a {
     border-top: 1px solid black;
     background-color: white; }
     .site-footer p, .site-footer span {
-      color: black; } }
+      color: black; }
+    .site-footer a {
+      color: black; }
+      .site-footer a:hover {
+        color: #6eaf66; } }
 
 .menu-social {
   text-align: right; }
@@ -468,7 +473,7 @@ a {
     .home-grid-menu .box img {
       position: absolute; }
     .home-grid-menu .box h2 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: 100;
       text-align: center;
       text-transform: uppercase;
