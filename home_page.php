@@ -18,33 +18,24 @@ get_header(); ?>
  	</div>
 	
 	<div class="home-grid-menu">
-		<figure class="box">
-			<img src="<?php bloginfo('template_url'); ?>/images/box1.jpg">
-			<figcaption>
-				<h2>
-					Film
-				</h2>
-			</figcaption>
-			</img>
-		</figure>
-		<!-- <figure class="box">
-			<img src="<?php bloginfo('template_url'); ?>/images/box2.jpg">
-			<figcaption>
-				<h2>
-					Theatre
-				</h2>
-			</figcaption>
-			</img>
-		</figure>
-		<figure class="box">
-			<img src="<?php bloginfo('template_url'); ?>/images/box3.jpg">
-			</img>
-			<figcaption>
-				<h2>
-					Events
-				</h2>
-			</figcatpion>
-		</figure> -->
+		<a class="box effect-bubba">
+			<img src="<?php bloginfo('template_url'); ?>/images/box1.jpg" />
+			<span class="caption">
+				<h2>Film</h2>
+			</span>
+		</a>
+		<a class="box effect-bubba">
+			<img src="<?php bloginfo('template_url'); ?>/images/box2.jpg" />
+			<span class="caption">
+				<h2>Theatre</h2>
+			</span>
+		</a>
+		<a class="box effect-bubba">
+			<img src="<?php bloginfo('template_url'); ?>/images/box3.jpg" />
+			<span class="caption">
+				<h2>Events</h2>
+			</span>
+		</a>
 	</div>
 
 <?php get_footer(); ?>

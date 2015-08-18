@@ -35,8 +35,7 @@
 			<?php else : ?>
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 			<?php endif; ?>
-			<img src="<?php bloginfo('template_url'); ?>/images/LogoTransparentBG.png"></img>
-			<!-- <p class="site-description"><?php bloginfo( 'description' ); ?></p> -->
+			<a href="<?php echo home_url(); ?>/"> <img src="<?php bloginfo('template_url'); ?>/images/LogoTransparentBG.png"></img></a>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">

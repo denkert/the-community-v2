@@ -1,0 +1,69 @@
+/*---------------*/
+/***** Bubba *****/
+/*---------------*/
+
+
+.effect-bubba img {
+	opacity: 0.8;
+	transition: opacity 0.35s;
+}
+
+.effect-bubba:hover img {
+	opacity: 0.4;
+}
+
+.effect-bubba .caption {
+	backface-visibility: hidden;
+	padding: 2em;
+}
+
+.effect-bubba .caption::before,
+.effect-bubba .caption::after {
+	position: absolute;
+	pointer-events: none;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	content: '';
+	opacity: 0;
+	transition: opacity 0.5s, transform 0.5s;
+}
+
+.effect-bubba .caption::before {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	transform: scale(0, 1);
+}
+
+.effect-bubba .caption::after {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	transform: scale(1, 0);
+}
+
+.effect-bubba .caption {
+	padding-top: 30%;
+	transition: transform 0.35s;
+}
+
+.effect-bubba .caption h2 {
+	transition: top 0.35s ease-in-out;
+	top: -20px;
+}
+
+.effect-bubba:hover .caption h2 {
+	top: 0;
+}
+
+
+.effect-bubba:hover .caption::before,
+.effect-bubba:hover .caption::after {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.effect-bubba:hover .caption {
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
