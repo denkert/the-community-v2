@@ -18,19 +18,19 @@ get_header(); ?>
  	</div>
 	
 	<div class="home-grid-menu">
-		<a class="box effect-bubba" href="thecommunitynyc.com/productions/films">
+		<a class="box effect-bubba" href="productions/films">
 			<img src="<?php bloginfo('template_url'); ?>/images/box1.png" />
 			<span class="caption">
 				<h2>Film</h2>
 			</span>
 		</a>
-		<a class="box effect-bubba" href="thecommunitynyc.com/productions/theatre">
+		<a class="box effect-bubba" href="productions/theatre">
 			<img src="<?php bloginfo('template_url'); ?>/images/box2.png" />
 			<span class="caption">
 				<h2>Theatre</h2>
 			</span>
 		</a>
-		<a class="box effect-bubba" href="thecommunitynyc.com/productions/about">
+		<a class="box effect-bubba" href="/about">
 			<img src="<?php bloginfo('template_url'); ?>/images/box3.png" />
 			<span class="caption">
 				<h2>Events</h2>
